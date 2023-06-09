@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="calculator">
+        <div id="outer-form">
+          <h1>Fencing Calculator</h1>
+          <label for="length" id="label-description"
+            >Fence Length (Meters)</label
+          ><br />
+          <input
+            type="number"
+            placeholder="Please enter the length"
+            name="length"
+            id="length"
+          /><br />
+          <h3>Number of Pickets</h3>
+          <p id="pickets">-</p>
+          <h3>Number of Rails</h3>
+          <p id="rails">-</p>
+          <h3>Number of Posts</h3>
+          <p id="posts">-</p>
+          <h3>Bags of Postcrete</h3>
+          <p id="postcrete">-</p>
+          <input
+            type="button"
+            onclick="Calculate()"
+            value="calculate"
+            id="btn"
+          />
+        </div>
+      </div>
+    </form>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
