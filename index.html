@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <form>
-      <div class="calculator">
-        <div id="outer-form">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <div class="calculator">
+
+      <div class="outer-form">
+        <div id="head-div">
           <h1>Fencing Calculator</h1>
-          <label for="length" id="label-description"
-            >Fence Length (Meters)</label
-          ><br />
-          <input
-            type="number"
-            placeholder="Please enter the length"
-            name="length"
-            id="length"
-          /><br />
+        </div>
+
+        <section id="fence-selector">
+          <label for="fence" id="fence-label">Please select the type of fence</label><br>
+          <select name="fence" id="fence">
+            <option value="3ft-picket" selected="selected">3ft High Picket Fence</option>
+            <option value="4ft-picket">4ft High Picket Fence</option>
+            <option value="6ft-picket">6ft High Picket Fence</option>
+          </select>
+          <br>
+          <input type="button" onclick="fenceSelection()" value="Ok" id="ok-btn" />
+        </section>
+
+        <section id="picket3">
+          <label for="length" id="label-description">Fence Length (Meters)</label><br />
+          <input type="number" placeholder="Please enter the length" name="length" id="length" /><br />
           <h3>Number of Pickets</h3>
           <p id="pickets">-</p>
           <h3>Number of Rails</h3>
@@ -29,15 +40,14 @@
           <p id="posts">-</p>
           <h3>Bags of Postcrete</h3>
           <p id="postcrete">-</p>
-          <input
-            type="button"
-            onclick="Calculate()"
-            value="calculate"
-            id="btn"
-          />
-        </div>
+          <input type="button" onclick="goBack()" value="Back" id="back-btn">
+          <input type="button" onclick="Calculate()" value="calculate" id="btn" />
+
+        </section>
       </div>
-    </form>
-    <script type="text/javascript" src="app.js"></script>
-  </body>
+    </div>
+  </form>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
 </html>

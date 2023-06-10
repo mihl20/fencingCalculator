@@ -1,16 +1,56 @@
-#outer-form {
-    text-align: center;
-    border: 2px solid grey;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px 30px 60px 30px;
-  }
-  
-  input {
-    margin: 10px;
-  }
-  
-  #btn {
-    padding: 5px 10px;
-    width: 150px;
-  }
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.outer-form {
+  text-align: center;
+  border: 2px solid grey;
+  max-width: 500px;
+  height: 560px;
+  margin: 40px auto 0px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+}
+
+#head-div {
+  background-color: #c7172c;
+  padding: 10px 30px 10px 30px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#fence-label {
+  display: inline-block;
+  margin-top: 150px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif font-weight: 600;
+}
+
+#fence {
+  margin: 20px 0px;
+  padding: 5px 45px;
+}
+
+#ok-btn {
+  padding: 5px 30px;
+}
+
+#picket3 {
+  display: none;
+}
+
+input {
+  margin: 10px;
+}
+
+#back-btn {
+  padding: 5px 10px;
+  width: 100px;
+}
+
+#btn {
+  padding: 5px 10px;
+  width: 100px;
+}
